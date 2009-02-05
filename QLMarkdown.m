@@ -2,13 +2,13 @@
 
 NSString* LoadBundleAndConvertText(NSString *text) {
 	NSBundle *ownBundle = [NSBundle bundleWithIdentifier:@"org.minuszero.qlgenerator.QLMarkdownPython"];
-	NSLog(@"%@", ownBundle);
+//	NSLog(@"%@", ownBundle);
 	NSString *pyBundlePath = [ownBundle pathForResource:@"QLMarkdown" ofType:@"plugin"];
-	NSLog(@"%@", pyBundlePath);
+//	NSLog(@"%@", pyBundlePath);
 	NSBundle *pyBundle = [NSBundle bundleWithPath:pyBundlePath];
-	NSLog(@"%@", pyBundle);
+//	NSLog(@"%@", pyBundle);
 	[pyBundle load];
-	NSLog(@"loaded pyBundle");
+//	NSLog(@"loaded pyBundle");
 	Class QLMarkdown = [pyBundle principalClass];
 	id markdown = [[QLMarkdown alloc] init];
 	

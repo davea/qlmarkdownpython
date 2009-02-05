@@ -16,7 +16,7 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
 	NSString *htmlString = ConvertURLToText((NSURL*)url);
 	NSRect viewRect = NSMakeRect(0.0, 0.0, 800.0, 600.0);
 	float scale = maxSize.height / 800.0;
-	NSLog(@"scale: %f, %@", scale, NSStringFromSize(NSSizeFromCGSize(maxSize)));
+//	NSLog(@"scale: %f, %@", scale, NSStringFromSize(NSSizeFromCGSize(maxSize)));
     NSSize scaleSize = NSMakeSize(scale, scale);
     CGSize thumbSize = NSSizeToCGSize(NSMakeSize((maxSize.width * (600.0/800.0)), 
 												 maxSize.height));

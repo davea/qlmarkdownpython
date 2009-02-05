@@ -9,7 +9,7 @@ Copyright (c) 2009 __MyCompanyName__. All rights reserved.
 import sys
 sys.path.append('/System/Library/Frameworks/Python.framework/Versions/2.5/Extras/lib/python/PyObjC/')
 
-from Foundation import *
+from Foundation import NSObject
 
 from markdown2 import markdown2
 
